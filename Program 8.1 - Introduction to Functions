@@ -1,0 +1,29 @@
+// Lesson 8.1 -- Introduction to functions
+// Lecture 8-1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+//list function
+void printfile();
+
+int main()
+{
+	//call function
+	printfile();
+
+
+
+	//pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
+
+
+void printfile()
+{
+	std::cout << "Print file test -- print to screen" << std::endl;
+}
