@@ -1,0 +1,36 @@
+// Lesson 8.2 -- Second attempt with functions 
+// Lecture 8-2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+//create functions
+double mult(double firstval, double secondval);
+double mult(double firstval, double secondval, double thirdval);
+
+int main()
+{
+	//call first function "mult" -- two variables
+	std::cout << mult(2.3, 7) << std::endl;
+
+	//call second function "mult" -- three variables
+	std::cout << mult(2.3, 7, 5);
+
+	//pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
+
+//describe functions
+double mult(double firstval, double secondval)
+{
+	return firstval * secondval;
+}
+
+double mult(double firstval, double secondval, double thirdval)
+{
+	return firstval * secondval * thirdval;
+}
