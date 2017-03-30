@@ -1,0 +1,37 @@
+// Lecture 8-3 Difference between declared variables in functions vs in-main variables
+// Lecture 8-3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+//Create functions
+int get_val(int myInt);
+
+
+int main()
+{
+
+//declare a myInt that is seperate from get_val's copy of myInt
+	int myInt = 4;
+
+//call function and regular myInt to show difference
+	std::cout << get_val(myInt) << std::endl;
+	std::cout << myInt << std::endl;
+
+
+//show memory location of main::myInt
+	std::cout << "The memory location of main::myInt is: " << &myInt << std::endl;
+//pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
+
+//describe functions
+int get_val(int myInt)
+{
+	std::cout << "Memmory location of get_val::myInt is: " << &myInt << std::endl;
+	return myInt + 1;
+}
