@@ -1,0 +1,46 @@
+// Lesson 10 -- Experimenting with pointers
+// Lecture 10.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <limits>
+
+//declare functions
+void PressEnter();
+
+
+int main()
+{
+	//declare variables
+	int a;
+	//variable to be used to store memory address as variable value --- Ptr included as notification of pointer
+	int *aPtr;
+
+	//giving a and aPtr values
+	a = 23;
+	aPtr = &a;
+
+	//begin listing variables and variable addresses
+	std::cout << "The address of a is " << &a;
+	std::cout << "\nThe address of aPtr is " << aPtr;
+	std::cout << "\nThe value of a is " << a;
+	std::cout << "\nThe value of *aPtr is " << *aPtr;
+
+
+	//call function PressEnter
+	PressEnter();
+
+	//pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
+
+//Describe functions
+void PressEnter()
+{
+	std::cout << "\nPlease press Enter to continue: " << std::flush;
+	std::cin.ignore(std::numeric_limits <std::streamsize> ::max(), '\n');
+}
