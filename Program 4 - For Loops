@@ -1,0 +1,28 @@
+//Lesson 4 -- For Loops
+// Lecture 4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>	
+
+
+int main()
+{
+	//describe index value
+	int index = 4;
+
+	//begin for function. Between index value and 10, continuously list integers
+	for (; index != 10; index++)
+		std::cout << index << std::endl;
+
+
+	//designation that the loop has finished
+	std::cout << "All done";
+
+
+	//Pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
