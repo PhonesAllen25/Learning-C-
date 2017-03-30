@@ -1,0 +1,41 @@
+// Lesson 3 -- If Statements
+// Lecture 3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+int main()
+{
+	//Dimensioning integers
+	int number1, number2;
+
+	//Main function
+	std::cout << "Enter the numbers and I will tell you the difference\n";
+	std::cin >> number1 >> number2;
+
+
+	//If statement calculations
+	if (number1 == number2)
+	{
+		std::cout << "These numbers are equal";
+	}
+
+	if (number1 > number2)
+	{
+		std::cout << "Number 1 is larger than number 2";
+	}
+
+	if (number1 < number2)
+	{
+		std::cout << "Number 1 is smaller than number 2";
+	}
+
+
+	//Pause code
+	int pause;
+	std::cin >> pause;
+
+
+    return 0;
+}
