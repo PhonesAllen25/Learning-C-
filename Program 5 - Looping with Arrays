@@ -1,0 +1,38 @@
+//Lesson 5 - Looping with arrays
+// Lecture 5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+int main()
+{
+	//establish constants
+	const int Array_Size = 5;
+	
+	//dimensioning Array values
+	int myArray[Array_Size] =  { 1, 2, 3, 4, 5 };
+	char myArray2[Array_Size] = { 'a', 'b', 'c', 'd', 'e' };
+
+	//Display array for numbers
+	for (int index = 0; index < 5; index++)
+	{
+		std::cout << "Pos or subscript = " << index << ": Value = " << myArray[index] << std::endl;
+	}
+
+	//Break between lines
+	std::cout << " " << std::endl;
+
+	//Display array for letters
+	for (int index = 0; index < 5; index++)
+	{
+		std::cout << "Pos or subscript = " << index << ": Value = " << myArray2[index] << std::endl;
+	}
+
+	//pause code
+	int pause;
+	std::cin >> pause;
+
+    return 0;
+}
