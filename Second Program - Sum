@@ -1,0 +1,35 @@
+//Lesson 2 -- Standard addition through defining integers, cin functionality, and arithmetic 
+// Lecture2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+int main()
+{
+	//define integers
+	int integer1, integer2, sum;
+
+	//Request input 1
+	std::cout << "Enter first integer\n";
+	std::cin >> integer1;
+
+	//Request input 2
+	std::cout << "Enter second integer\n";
+	std::cin >> integer2;
+
+	//Sum calculation
+	sum = integer1 + integer2;
+
+	//call sum calculation and print to screen
+	std::cout << "Sum is " << sum << std::endl;
+
+
+	//pause code
+	int pause;
+	std::cin >> pause;
+
+
+    return 0;
+}
