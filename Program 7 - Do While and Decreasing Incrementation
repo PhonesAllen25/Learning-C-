@@ -1,0 +1,26 @@
+// Lesson 7 -- Do While Function and decreasing incrementation
+// Lecture 7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+int main()
+{
+	//dimension integers
+	int counter = 10;
+
+	//Do-While function. Subtract 1 every time
+	do
+	{
+		std::cout << "The counter variable is: " << counter-- << std::endl;
+	} while (counter > 0);
+
+	//Pause code
+	int pause;
+	std::cin >> pause;
+
+
+    return 0;
+}
