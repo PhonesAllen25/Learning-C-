@@ -1,0 +1,21 @@
+//Lesson 1 of learning C++ -- Hello World
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+int main()
+{
+	std::cout << "Hello World" << std::endl;
+	
+	std::cout << "\nIt's good to meet you";
+
+
+	int pause;
+	pause = 0;
+	std::cin >> pause;
+
+    return 0;
+}
